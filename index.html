@@ -24,22 +24,22 @@
     
     <!-- Player vs Computer Display -->
     <div class="flex justify-around items-center">
-      <div id="player-choice" class="w-32 h-32 bg-neutral-800 text-yellow-400 flex items-center justify-center rounded-full text-4xl shadow-lg"></div>
-      <img src="/versus.png" class="w-32 opacity-90" alt="vs">
-      <div id="computer-choice" class="w-32 h-32 bg-neutral-800 text-yellow-400 flex items-center justify-center rounded-full text-4xl shadow-lg"></div>
+      <div id="player-choice" class="min-w-32 min-h-32 bg-neutral-800 text-yellow-400 flex items-center justify-center rounded-full text-4xl shadow-lg"></div>
+      <div class="max-w-32"><img src="/versus.png" class="max-w-full h-auto opacity-90" alt="vs"></div>
+      <div id="computer-choice" class="min-w-32 min-h-32 bg-neutral-800 text-yellow-400 flex items-center justify-center rounded-full text-4xl shadow-lg"></div>
     </div>
 
     <!-- Scoreboard -->
-    <div class="flex justify-around items-center bg-neutral-800 py-4 px-6 rounded-xl text-lg shadow-inner">
+    <div class="flex flex-wrap justify-around items-center bg-neutral-800 py-4 px-6 rounded-xl text-lg shadow-inner">
       <div class="flex-1 text-yellow-400 font-semibold">YOU</div>
-      <div class="flex-1 text-white text-2xl font-bold tracking-wider">
+      <div class="flex-1 text-nowrap text-white text-2xl font-bold tracking-wider">
         <span id="player-score">00</span> : <span id="computer-score">00</span>
       </div>
       <div class="flex-1 text-yellow-400 font-semibold">COMPUTER</div>
     </div>
 
     <!-- Choice Buttons -->
-    <div class="flex justify-around">
+    <div class="flex flex-wrap gap-y-6 justify-around">
       <button class="playerChoice w-24 h-24 bg-yellow-400 text-black rounded-full text-3xl shadow-md transition duration-200" data-choice="rock">
         <i class="fa-solid fa-hand-back-fist"></i>
       </button>
